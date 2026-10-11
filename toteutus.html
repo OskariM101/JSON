@@ -29,22 +29,26 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
+    // Haetaan JSON-tietue
     fetch("toteutus.json")
+      // MUutetaan vastaus
       .then(function (response) {
         return response.json();
       })
+      // Käsitellään vastaus ja välitrtään tieto
       .then(function (responseJson) {
         kerro(responseJson);
       })
+      // Ilmoitetaan virheestä
       .catch(function (error) {
         document.getElementById("vastaus").innerHTML = "<p>Tietoa ei pystytä hakemaan</p>";
       });
 
     function kerro(obj) {
       let tiedot = "<h1>" + obj.nimi + "</h1><hr>";
-
+      // Kuva
       tiedot += "<p><img src='" + obj.kuva + "'></p>";
-
+      // Osallistujat
       tiedot += "<p>"
         + "<b>Osallistujien lukumäärä:</b> " + obj.osallistujienLukumaara + " kpl<br>"
         + "<b>Alkamisaika:</b> " + obj.alkamisaika + "<br>"
