@@ -29,15 +29,15 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    
+    // Haetaan JSON-tietue
     fetch("tietue.json")
 
-    
+      // Muutetaan vastaus
       .then(function (response) {
         return response.json();
       })
 
-     
+       // Käsitellään ja välitetään tieto
       .then(function (responseJson) {
         kerro(responseJson);
       })
@@ -48,19 +48,19 @@
       });
 
     function kerro(obj) {
-    
+      // Otsikko ja kuvaus
       let tiedot = "<h1>" + obj.otsikko + "</h1><br>" + obj.kuvaus + "<br><hr>";
 
-    
+      // Kuva
       tiedot += "<p><img src='" + obj.kuva + "'></p>";
 
-    
+      // Opintojakso
       tiedot += "<h3>Opintojakso</h3>"
         + "Nimi: " + obj.opintojakso.nimi + "<br>"
         + "Tunnus: " + obj.opintojakso.tunnus + "<br>"
         + "Opintopisteet: " + obj.opintojakso.opintopisteet + "<br>";
 
-    
+      // Käytetään for-silmukkaa
       tiedot += "<p><h3>Aiheet</h3>";
 
       for (var i = 0; i < obj.tekniikat.length; i++) {
