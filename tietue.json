@@ -1,0 +1,34 @@
+{
+  "otsikko": "JSON-datan käsittelyä",
+  "kuvaus": "Tämä sivu hakee tiedot JSON-tietuepalvelimelta.",
+  "kuva": "https://github.com/OskariM101/JSON/blob/main/images.jpg",
+  "opintojakso": {
+    "nimi": "Digitekniikat",
+    "tunnus": "DIG007AS2A",
+    "opintopisteet": 5
+  },
+  "sisalto": [
+    "low-code",
+    "sisällönhallintajärjestelmät",
+    "responsiivinen käyttöliittymä ja komponentit",
+    "tiedon haku julkisista palveluista rest-rajapinnan yli"
+  ],
+  "tekniikat": [
+    {
+      "aihe": "low-code",
+      "linkki": "https://en.wikipedia.org/wiki/Low-code_development_platform"
+    },
+    {
+      "aihe": "sisällönhallintajärjestelmät",
+      "linkki": "https://wordpress.org"
+    },
+    {
+      "aihe": "responsiivinen käyttöliittymä ja komponentit",
+      "linkki": "https://getbootstrap.com"
+    },
+    {
+      "aihe": "tiedon haku julkisista palveluista rest-rajapinnan yli",
+      "linkki": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+    }
+  ]
+}
